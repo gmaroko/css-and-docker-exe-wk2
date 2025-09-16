@@ -25,9 +25,16 @@
     <main id="main">
         <article>
             <header>
-                <h2>Welcome to GMA Shooting Range's official website</h2>
+                <h2>Welcome to the GMA Shooting Range</h2>
                 <p><time datetime="2025-09-16">September 16, 2025</time></p>
             </header>
+            <section>
+                <h3>Hero Image</h3>
+                <picture>
+                    <source srcset="assets/images/hero-large.jpg 1200w, assets/images/hero-medium.jpg 800w, assets/images/hero-small.jpg 400w" sizes="(max-width: 600px) 400px, (max-width: 900px) 800px, 1200px">
+                    <img src="assets/images/hero-medium.jpg" alt="People practicing at the GMA Shooting Range" style="width:100%;height:auto;">
+                </picture>
+            </section>
             <section>
                 <h3>About Our Range</h3>
                 <p>
@@ -36,6 +43,16 @@
                 <p>
                     <strong>Location:</strong> Nairobi, Kenya
                 </p>
+            </section>
+            <section>
+                <h3>Quick Facts</h3>
+                <ul>
+                    <li>Open since <time datetime="2020-01-01">2020</time></li>
+                    <li>Certified <abbr title="National Rifle Association">NRA</abbr> instructors</li>
+                    <li>Modern safety equipment (<abbr title="Personal Protective Equipment">PPE</abbr>)</li>
+                    <li>Family-friendly environment</li>
+                    <li>Located in the heart of Nairobi</li>
+                </ul>
             </section>
             <section>
                 <h3>Why Safety Matters</h3>
@@ -52,6 +69,13 @@
                 </ul>
                 <p>For more details, see our <a href="about.html">About</a> page.</p>
             </section>
+            <section>
+                <h3>Featured Award</h3>
+                <figure>
+                    <img src="assets/images/awards.jpg" alt="Award ceremony at the range" style="max-width:100%;height:auto;">
+                    <figcaption>Our chief instructor receiving a safety excellence award, 2025.</figcaption>
+                </figure>
+            </section>
             <aside aria-label="Range Tips">
                 <p>
                     <time datetime="2020-01-01">2020</time> marked our grand opening!
@@ -59,8 +83,8 @@
             </aside>
             <footer>
                 <address>
-                    Contact: <a href="mailto:info@gmasr.com">info@gmasr.com</a><br />
-                    GMA Shooting Range, Nairobi
+                    Contact: <a href="mailto:info@shootingrange.com">info@shootingrange.com</a><br />
+                    Shooting Range, Nairobi
                 </address>
             </footer>
         </article>
