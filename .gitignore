@@ -1,0 +1,22 @@
+# IDE/Editor specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.DS_Store
+Thumbs.db
+
+# Build artifacts/temporary files
+/dist/
+/build/
+*.log
+*.tmp
+*.bak
+
+# Dependency directories (if applicable, e.g., for front-end frameworks)
+node_modules/
+bower_components/
+
+# Other temporary or sensitive files
+*.env
+.env.local
