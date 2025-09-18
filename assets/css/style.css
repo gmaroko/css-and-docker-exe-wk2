@@ -35,3 +35,36 @@
     --brand-contrast: #181c1f;
   }
 }
+
+/* Base Reset & Rhythm */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  font-size: var(--body);
+  line-height: 1.6;
+}
+
+main, article, section, header, footer, nav, aside {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+section, article {
+  margin-bottom: var(--space-4);
+}
