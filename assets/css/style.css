@@ -1,3 +1,47 @@
+/* Responsive Rules */
+@media (max-width: 480px) {
+  body {
+    font-size: 0.98rem;
+    padding: var(--space-1);
+  }
+  main {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+  }
+  .card {
+    padding: var(--space-2);
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  main {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+  .card {
+    padding: var(--space-3);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  main {
+    grid-template-columns: 1.5fr 1fr;
+    gap: var(--space-4);
+  }
+  .card {
+    padding: var(--space-4);
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    grid-template-columns: 2.5fr 1fr 1fr;
+    gap: var(--space-5);
+  }
+  .card {
+    padding: var(--space-5);
+  }
+}
 /* States & Motion */
 a, button, summary, [tabindex]:not([tabindex="-1"]) {
   transition: color 0.2s, background 0.2s, box-shadow 0.2s;
