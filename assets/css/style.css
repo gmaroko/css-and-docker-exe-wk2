@@ -324,7 +324,7 @@ main {
 
 footer {
   background: color-mix(in srgb, var(--bg) 90%, var(--fg) 10%);
-  color: var(--muted);
+  color: var(--fg);
   text-align: center;
   padding: var(--space-3) 0;
   font-size: 0.95em;
