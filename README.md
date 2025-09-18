@@ -1,4 +1,6 @@
-# GMA Shooting Range — HTML5 Website
+# GMA Shooting Range — Website
+
+A continuation of the [HTML-ONLY](https://github.com/gmaroko/html-web-exe-wk1) site
 
 ## Purpose
 This project is an assignment to demonstrate a modern, accessible, and semantic HTML5 website for a fictional shooting range. It showcases best practices in HTML5 structure, media, accessibility, and interactive elements, without using CSS or JavaScript.
@@ -6,6 +8,8 @@ This project is an assignment to demonstrate a modern, accessible, and semantic 
 ## Technologies Used
 
 - HTML5
+- CSS
+- Docker
 
 ## Disclaimer
 
