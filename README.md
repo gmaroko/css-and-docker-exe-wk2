@@ -93,6 +93,12 @@ docker push 06992014/html5-css3-site:latest
 ### Mobile
 ![Mobile screenshot](assets/images/screenshot-mobile.png)
 
+### Lighthouse report - Local
+![Lighthouse Local Report](assets/images/lighthouse-local.png)
+
+
+### Lighthouse report - Live
+![Lighthouse Prod Report](assets/images/lighthouse-prod.png)
 ## Live Link
 
 [GMA Shooting Range](https://gmaroko.github.io/html-web-exe-wk1/)
