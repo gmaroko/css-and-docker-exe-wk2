@@ -1,0 +1,31 @@
+# Docker ignore patterns
+.git
+.gitignore
+README.md
+*.md
+*.DS_Store
+node_modules
+
+## License files
+LICENSE
+
+## VS Code and IDE files
+*.log
+*.swp
+*.tmp
+*.bak
+Thumbs.db
+ehthumbs.db
+.vscode
+.idea
+__pycache__/
+*.zip
+*.tar
+*.tar.gz
+*.env
+*.local
+test/
+tests/
+coverage/
+dist/
+build/
