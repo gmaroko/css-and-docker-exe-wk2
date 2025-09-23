@@ -12,113 +12,120 @@
 
 
 <body>
-	<a href="#main">Skip to content</a>
-	   <header class="mb-4">
-		   <h1 class="text-center mb-2">GMA Shooting Range</h1>
-		   <nav aria-label="Primary">
-			   <ul>
-				   <li><a href="index.html">Home</a></li>
-				   <li><a href="about.html">About US</a></li>
-				   <li><a href="media.html">Media</a></li>
-				   <li><a href="#" aria-current="page">Extras</a></li>
-			   </ul>
-		   </nav>
-	   </header>
-	   <main id="main">
-		   <article>
-			   <header class="mb-3">
-				   <h2 class="text-center">Extras &amp; Resources</h2>
-			   </header>
-			<section>
-					<h3>Range Pricing Table</h3>
-					<div class="table-wrapper">
-						<table>
-					<caption>GMA Shooting Range Pricing (2025)</caption>
-					<thead>
-						<tr>
-							<th scope="col">Service</th>
-							<th scope="col">Duration</th>
-							<th scope="col">Price (KES)</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th scope="row">Basic Range Access</th>
-							<td>1 hour</td>
-							<td>1,500</td>
-						</tr>
-						<tr>
-							<th scope="row">Instructor Session</th>
-							<td>30 min</td>
-							<td>2,000</td>
-						</tr>
-						<tr>
-							<th scope="row">Group Package</th>
-							<td>2 hours</td>
-							<td>5,000</td>
-						</tr>
-					</tbody>
-					<tfoot>
-						<tr>
-							<th scope="row" colspan="2">Equipment Rental (per session)</th>
-							<td>500</td>
-						</tr>
-					</tfoot>
-				</table>
-			</section>
-			<section>
-				<h3>Test use of samp tag</h3>
-				<pre><code>&lt;button type="button" onclick="alert('Range session started!')"&gt;Start Session&lt;/button&gt;</code></pre>
-				<p>Sample output: <samp>Range session started!</samp></p>
-			</section>
-			<section>
-				<h3>More Info &amp; Dialog</h3>
-				<details open>
-					<summary>What makes GMA unique?</summary>
-					<p>We offer certified instructors, modern facilities, and a strong focus on safety and community.</p>
-				</details>
-				<dialog open>
-					<h4>Special Notice</h4>
-					<p>Next safety workshop: <time datetime="2025-10-01">October 1, 2025</time>. All are welcome!</p>
-				</dialog>
-			</section>
-			<section>
-				<h3>Progress &amp; Meter</h3>
-				<p>Monthly Membership Signups:</p>
-				<progress value="75" max="100">75%</progress>
-				<p>Range Cleanliness Level:</p>
-				<meter value="0.95" min="0" max="1">95%</meter>
-			</section>
-			<section>
-				<h3>Customer Testimonial</h3>
-				<blockquote cite="https://gmasr.com/testimonials">
-					“The instructors are knowledgeable and the facility is top-notch. I felt safe and welcomed throughout my visit!”
-					<footer>— <cite>John John.</cite></footer>
-				</blockquote>
-			</section>
-			<section>
-				<h3>More Information</h3>
-				<details>
-					<summary>What should I bring to the range?</summary>
-					<ul>
-						<li>Valid ID</li>
-						<li>Comfortable clothing</li>
-						<li>Personal protective equipment (if available)</li>
-					</ul>
-				</details>
-				<details>
-					<summary>How do I book a session?</summary>
-					<p>You can book online or call us at <a href="tel:+254700000000">+254 700 000 000</a>.</p>
-				</details>
-			</section>
-		</article>
-	</main>
-	<hr>
-	   <footer class="mt-5">
-		   <p class="text-center">
-			   &copy; <time datetime="2025">2025</time> GMA Shooting Range. All rights reserved.
-		   </p>
-	   </footer>
+	<div class="body-container">
+		<a href="#main">Skip to content</a>
+		<header class="mb-4">
+			<h1 class="text-center mb-2">GMA Shooting Range</h1>
+			<nav aria-label="Primary">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="media.html">Media</a></li>
+					<li><a href="#" aria-current="page">Extras</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="container">
+			<main id="main">
+				<article>
+					<header class="mb-3">
+						<h2 class="text-center">Extras &amp; Resources</h2>
+					</header>
+					<section>
+						<h3>Range Pricing Table</h3>
+						<div class="table-wrapper">
+							<table>
+								<caption>GMA Shooting Range Pricing (2025)</caption>
+								<thead>
+									<tr>
+										<th scope="col">Service</th>
+										<th scope="col">Duration</th>
+										<th scope="col">Price (KES)</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">Basic Range Access</th>
+										<td>1 hour</td>
+										<td>1,500</td>
+									</tr>
+									<tr>
+										<th scope="row">Instructor Session</th>
+										<td>30 min</td>
+										<td>2,000</td>
+									</tr>
+									<tr>
+										<th scope="row">Group Package</th>
+										<td>2 hours</td>
+										<td>5,000</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<th scope="row" colspan="2">Equipment Rental (per session)</th>
+										<td>500</td>
+									</tr>
+								</tfoot>
+							</table>
+					</section>
+					<section id="use-smp">
+						<h3>Test use of samp tag</h3>
+						<pre><code>&lt;button type="button" onclick="alert('Range session started!')"&gt;Start Session&lt;/button&gt;</code></pre>
+						<p>Sample output: <samp>Range session started!</samp></p>
+					</section>
+					<section>
+						<h3>More Info &amp; Dialog</h3>
+						<details open>
+							<summary>What makes GMA unique?</summary>
+							<p>We offer certified instructors, modern facilities, and a strong focus on safety and
+								community.</p>
+						</details>
+						<dialog open>
+							<h4>Special Notice</h4>
+							<p>Next safety workshop: <time datetime="2025-10-01">October 1, 2025</time>. All are
+								welcome!</p>
+						</dialog>
+					</section>
+					<section>
+						<h3>Progress &amp; Meter</h3>
+						<p>Monthly Membership Signups:</p>
+						<progress value="75" max="100">75%</progress>
+						<p>Range Cleanliness Level:</p>
+						<meter value="0.95" min="0" max="1">95%</meter>
+					</section>
+					<section>
+						<h3>Customer Testimonial</h3>
+						<blockquote cite="https://gmasr.com/testimonials">
+							“The instructors are knowledgeable and the facility is top-notch. I felt safe and welcomed
+							throughout my visit!”
+							<footer>— <cite>John John.</cite></footer>
+						</blockquote>
+					</section>
+					<section>
+						<h3>More Information</h3>
+						<details>
+							<summary>What should I bring to the range?</summary>
+							<ul>
+								<li>Valid ID</li>
+								<li>Comfortable clothing</li>
+								<li>Personal protective equipment (if available)</li>
+							</ul>
+						</details>
+						<details>
+							<summary>How do I book a session?</summary>
+							<p>You can book online or call us at <a href="tel:+254700000000">+254 700 000 000</a>.</p>
+						</details>
+					</section>
+				</article>
+			</main>
+		</div>
+		<hr>
+		<footer class="mt-5">
+			<p class="text-center">
+				&copy; <time datetime="2025">2025</time> GMA Shooting Range. All rights reserved.
+			</p>
+		</footer>
+	</div>
 </body>
 
 </html>
