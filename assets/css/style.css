@@ -1,7 +1,7 @@
 /* Layout container for central placement */
 .container {
-  max-width: auto;
-  width: auto;
+  max-width: 100ch;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: var(--space-3);
@@ -39,10 +39,9 @@ a[href="#main"]:focus, .skip-link:focus {
 @media (max-width: 480px) {
   body {
     font-size: 0.98rem;
-    padding: var(--space-1);
   }
+
   main {
-    grid-template-columns: 1fr;
     gap: var(--space-2);
   }
   .card {
@@ -52,7 +51,6 @@ a[href="#main"]:focus, .skip-link:focus {
 
 @media (min-width: 481px) and (max-width: 767px) {
   main {
-    grid-template-columns: 1fr;
     gap: var(--space-3);
   }
   .card {
@@ -82,7 +80,6 @@ a[href="#main"]:focus, .skip-link:focus {
 /* States & Motion */
 a, button, summary, [tabindex]:not([tabindex="-1"]) {
   transition: color 0.2s, background 0.2s, box-shadow 0.2s;
-  outline: none;
 }
 
 a:focus, a:hover,
@@ -92,11 +89,6 @@ summary:focus, summary:hover {
   background: var(--brand);
   outline: 2px solid var(--brand);
   outline-offset: 2px;
-}
-
-summary {
-  transition: background 0.2s, color 0.2s;
-  border-radius: 0.25em;
 }
 
 .card {
@@ -144,10 +136,20 @@ summary {
   white-space: nowrap !important;
   border: 0 !important;
 }
+
+#use-smp {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+}
+
 /* Table Borders Enhancement */
 table, th, td {
   border: 1px solid color-mix(in srgb, var(--muted) 30%, var(--bg) 70%);
+  white-space: nowrap;
 }
+
 th {
   border-bottom: 2px solid var(--brand);
 }
@@ -211,7 +213,6 @@ mark {
 }
 /*
   Design Tokens and Dark Mode
-  ==========================
   All color, typography, and spacing variables are defined here for consistency.
 */
 :root {
@@ -252,30 +253,6 @@ mark {
   box-sizing: border-box;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  background: var(--bg);
-  color: var(--fg);
-  font-family: var(--font-sans);
-  font-size: var(--body);
-  line-height: 1.6;
-}
-
-main, article, section, header, footer, nav, aside {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  max-width: 60ch;
-  margin-left: auto;
-  margin-right: auto;
-  min-height: 100vh;
-  background: var(--bg);
-  color: var(--fg);
-}
-
 section, article {
   margin-bottom: var(--space-4);
 }
@@ -300,12 +277,7 @@ nav ul {
   flex-wrap: wrap;
   gap: var(--space-3);
   list-style: none;
-  margin: 0;
   padding: 0;
-}
-
-nav li {
-  margin: 0;
 }
 
 @media (max-width: 600px) {
@@ -322,7 +294,6 @@ nav li {
 
 main {
   display: grid;
-  grid-template-columns: 1fr;
   gap: var(--space-4);
 }
 
@@ -399,6 +370,7 @@ tbody tr:nth-child(even) {
 .table-wrapper {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  width: 100%;
 }
 
 /* Responsive media */
@@ -434,4 +406,47 @@ summary {
 details:focus-within, dialog:focus-within, summary:focus {
   outline: 2px solid var(--brand);
   outline-offset: 2px;
+}
+
+/* Fullscreen body with background image */
+body {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: var(--bg) url('assets/images/bg.png') no-repeat center center;
+  background-size: cover;
+  font-family: var(--font-sans);
+  font-size: var(--body);
+  color: var(--fg);
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+/* Responsive content wrapper */
+.body-container, #main {
+  max-width: 100ch;              /* Limits content width for readability */
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: var(--space-4);
+  box-sizing: border-box;
+}
+
+/* Optional: make #main visually distinct */
+main#main {
+  background: linear-gradient(135deg,
+    color-mix(in srgb, var(--brand) 2%, var(--bg) 98%),
+    color-mix(in srgb, var(--brand) 8%, var(--bg) 92%)
+  );
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px 0 color-mix(in srgb, var(--brand) 100%, transparent 50%);
+  margin-bottom: var(--space-5);
+  max-width: 100%;
+  overflow-x: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: var(--space-4);
+  box-sizing: border-box;
 }
