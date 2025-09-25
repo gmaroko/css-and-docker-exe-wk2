@@ -178,7 +178,7 @@ p, ul, ol, dl, blockquote, pre, table, figure {
 
 a {
   color: var(--brand);
-  text-decoration: underline;
+  text-decoration: none;
   transition: color 0.2s;
 }
 
@@ -278,6 +278,7 @@ nav ul {
   gap: var(--space-3);
   list-style: none;
   padding: 0;
+  text-decoration: none;
 }
 
 @media (max-width: 600px) {
@@ -320,7 +321,6 @@ footer {
 }
 
 footer a {
-  /* color: var(--brand); */
   text-decoration: underline;
   transition: color 0.2s;
   background: color-mix(in srgb, var(--bg) 90%, var(--fg) 10%);
@@ -452,3 +452,5 @@ main#main {
   padding: var(--space-4);
   box-sizing: border-box;
 }
+
+
